@@ -13,6 +13,10 @@ public class PlayerScript: MonoBehaviour {
 
 		HPLabel.text = "PlayerHP:" + playerHP.ToString ();
 
+		if (playerHP <= 0) {
+
+			SceneManager.LoadScene ("GameOver");
+		}
 	}
 
 	// ダメージを与えられた時に行いたい命令を書く
@@ -22,5 +26,20 @@ public class PlayerScript: MonoBehaviour {
 			SceneManager.LoadScene ("GameOver");
 		}
 	}
+	void OnTriggerEnter(Collider other){
+
+		if (other.gameObject.tag == "Enemy") {
+
+			playerHP--;
+			Destroy (other.gameObject);
+
+		} else if (other.gameObject.tag == "Treasure") {
+
+			SceneManager.LoadScene ("GameClear");
+		}
+
+
+	}
+
 }
 
