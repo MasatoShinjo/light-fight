@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 30336349ba87c46a6981feaa0daaf585
+timeCreated: 1495096612
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: 'Motion Picture Personal Use '
+  fontNames:
+  - 'Motion Picture Personal Use '
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
